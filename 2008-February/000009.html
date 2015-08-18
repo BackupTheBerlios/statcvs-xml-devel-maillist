@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Statcvs-xml-devel] maven2 problem
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/statcvs-xml-devel/2008-February/index.html" >
+   <LINK REL="made" HREF="mailto:statcvs-xml-devel%40lists.berlios.de?Subject=Re%3A%20%5BStatcvs-xml-devel%5D%20%3D%3Futf-8%3Fq%3Fmaven2_problem%3F%3D&In-Reply-To=%3C485b3116.10bdf7f2.47b58245.9c1ff%40o2.pl%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Statcvs-xml-devel] maven2 problem</H1>
+    <B>wojtekb82_23</B> 
+    <A HREF="mailto:statcvs-xml-devel%40lists.berlios.de?Subject=Re%3A%20%5BStatcvs-xml-devel%5D%20%3D%3Futf-8%3Fq%3Fmaven2_problem%3F%3D&In-Reply-To=%3C485b3116.10bdf7f2.47b58245.9c1ff%40o2.pl%3E"
+       TITLE="[Statcvs-xml-devel] maven2 problem">wojtekb82_23 at o2.pl
+       </A><BR>
+    <I>Fri Feb 15 13:15:01 CET 2008</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hello,
+
+I followed the instructions in <A HREF="http://statcvs-xml.berlios.de/maven2-plugin/usage.html">http://statcvs-xml.berlios.de/maven2-plugin/usage.html</A>
+but I get the error:
+
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XXXXXXX
+[INFO]    task-segment: [site]
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD ERROR
+[INFO] ------------------------------------------------------------------------
+[INFO] The plugin 'statcvs:maven-statcvs-plugin' does not exist or no valid version could be found
+[INFO] ------------------------------------------------------------------------
+[INFO] Trace
+org.apache.maven.lifecycle.LifecycleExecutionException: The plugin 'statcvs:maven-statcvs-plugin' does not exist or no valid
+version could be found
+        at org.apache.maven.lifecycle.DefaultLifecycleExecutor.verifyReportPlugin(DefaultLifecycleExecutor.java:1326)
+        at org.apache.maven.lifecycle.DefaultLifecycleExecutor.getReports(DefaultLifecycleExecutor.java:662)
+        at org.apache.maven.lifecycle.DefaultLifecycleExecutor.getReports(DefaultLifecycleExecutor.java:642)
+        at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoals(DefaultLifecycleExecutor.java:517)
+        at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoalWithLifecycle(DefaultLifecycleExecutor.java:480)
+        at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoal(DefaultLifecycleExecutor.java:459)
+        at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoalAndHandleFailures(DefaultLifecycleExecutor.java:311
+)
+        at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeTaskSegments(DefaultLifecycleExecutor.java:278)
+        at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:143)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:333)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:126)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:282)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+        at java.lang.reflect.Method.invoke(Method.java:585)
+        at org.codehaus.classworlds.Launcher.launchEnhanced(Launcher.java:315)
+        at org.codehaus.classworlds.Launcher.launch(Launcher.java:255)
+        at org.codehaus.classworlds.Launcher.mainWithExitCode(Launcher.java:430)
+        at org.codehaus.classworlds.Launcher.main(Launcher.java:375)
+Caused by: org.apache.maven.plugin.version.PluginVersionNotFoundException: The plugin 'statcvs:maven-statcvs-plugin' does not
+ exist or no valid version could be found
+        at org.apache.maven.plugin.version.DefaultPluginVersionManager.resolvePluginVersion(DefaultPluginVersionManager.java:
+229)
+        at org.apache.maven.plugin.version.DefaultPluginVersionManager.resolveReportPluginVersion(DefaultPluginVersionManager
+.java:98)
+        at org.apache.maven.plugin.DefaultPluginManager.verifyReportPlugin(DefaultPluginManager.java:513)
+        at org.apache.maven.lifecycle.DefaultLifecycleExecutor.verifyReportPlugin(DefaultLifecycleExecutor.java:1297)
+        ... 19 more
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3 seconds
+[INFO] Finished at: Fri Feb 15 13:13:21 CET 2008
+[INFO] Final Memory: 5M/9M
+[INFO] ------------------------------------------------------------------------
+
+Any idea what goes wrong?
+
+Kind regards,
+WB.
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/statcvs-xml-devel">More information about the Statcvs-xml-devel
+mailing list</a><br>
+</body></html>

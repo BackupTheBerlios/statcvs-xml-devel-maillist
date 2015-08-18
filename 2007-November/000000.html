@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Statcvs-xml-devel] NullPointerExceptionProblem
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/statcvs-xml-devel/2007-November/index.html" >
+   <LINK REL="made" HREF="mailto:statcvs-xml-devel%40lists.berlios.de?Subject=Re%3A%20%5BStatcvs-xml-devel%5D%20NullPointerExceptionProblem&In-Reply-To=%3Ca1e9b30f0711020430o6c9060c3wb350f87b03defcb4%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000001.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Statcvs-xml-devel] NullPointerExceptionProblem</H1>
+    <B>Balamir Kodak</B> 
+    <A HREF="mailto:statcvs-xml-devel%40lists.berlios.de?Subject=Re%3A%20%5BStatcvs-xml-devel%5D%20NullPointerExceptionProblem&In-Reply-To=%3Ca1e9b30f0711020430o6c9060c3wb350f87b03defcb4%40mail.gmail.com%3E"
+       TITLE="[Statcvs-xml-devel] NullPointerExceptionProblem">balamir.kodak at gmail.com
+       </A><BR>
+    <I>Fri Nov  2 12:30:38 CET 2007</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000001.html">[Statcvs-xml-devel] &quot;Cowardly refusing&quot; error
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hii,
+
+I tried statcvs task such above ;
+
+    &lt;target name=&quot;stats&quot; depends=&quot;checkout_from_cvs&quot; &gt;
+        &lt;taskdef name=&quot;statcvs&quot; classname=&quot;net.sf.statcvs.ant.StatCvsTask&quot;
+classpath=&quot;${lib.home}/statcvs.jar&quot;/&gt;
+        &lt;statcvs log=&quot;cvs.log&quot; path=&quot;.&quot; title=&quot;StatCVS&quot; outputDir=&quot;${
+report.home}/statcvs&quot; notes=&quot;report-notes.txt&quot; tags=&quot;.*&quot; /&gt;
+    &lt;/target&gt;
+
+i could not understand path attribute , i put it on alot of path but i get
+an error log ;java.lang.NullPointerException
+or
+  [statcvs] Nov 2, 2007 1:29:15 PM net.sf.statcvs.MaingenerateDefaultHTMLSuite
+  [statcvs] WARNING: Empty repository
+  [statcvs] Nov 2, 2007 1:29:15 PM net.sf.statcvs.MaingenerateDefaultHTMLSuite
+  [statcvs] WARNING: No CVS metadata found in working copy. Reports may be
+inaccurate.
+
+thanks for any help
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/statcvs-xml-devel/attachments/20071102/1ff97fe3/attachment.html">https://lists.berlios.de/pipermail/statcvs-xml-devel/attachments/20071102/1ff97fe3/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000001.html">[Statcvs-xml-devel] &quot;Cowardly refusing&quot; error
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/statcvs-xml-devel">More information about the Statcvs-xml-devel
+mailing list</a><br>
+</body></html>
